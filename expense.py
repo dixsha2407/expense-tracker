@@ -1,16 +1,11 @@
 income=int(input())
 dict1={}
 while input("Enter q to quit,c to continue ") != 'q':
-    while True:
-        key=input("enter item")
-        if not type(key) is str:
-            raise TypeError("Enter string value")
-        else:
-            break
-    while True:
-        value1=input("enter price ")
+    key=input("enter item")
+    while True: 
+        value1=int(input("enter price "))
         if not type(value1) is int:
-            raise TypeError("enter number")
+            print("enter number")
         else:
             break
     dict1.update({key:value1})
